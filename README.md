@@ -12,7 +12,7 @@ Overview of the Project
 
 Fitness and Calorie Tracker is an intuitive command-line tool for everyday health and fitness tracking. It combines meal logging with exercise logs to provide a target-driven nutrition, macro, and calorie computation with real time feedback on current progress, along with storing historical summaries for long-term tracking. We use Python libraries and a modular design, which isolates business logic for diet tracking, workout logging, target goals, and database handling to keep a persistent history into different Python modules.
 
-Features
+## Features:
 
 * Meal and Nutrition Tracking (dieting.py):
 
@@ -42,7 +42,7 @@ Features
 
 * Enables view stored historical progression entirely from command-line interface.
 
-Technologies / Tools Used
+## Technologies / Tools Used
 
 * Programming Language: Python 3.x
 
@@ -60,27 +60,27 @@ Run The script to run the project 3.
 
 Data Preparation is done then all the reports.
 
-# Prerequisites
+## Prerequisites
 
 Please ensure that Python is installed in your environment (Python version 3.6 or above).
 
-# Installation and Execution
+## Installation and Execution
 
 1. Clone the Repository:
 
-``bash
+```bash
 
 git clone https://github.com/Ishan-Tripathii/Calorie-Tracker-Proejct
 
 cd Calorie-Tracker-Proejct
 
-`
+```
 
 2. Verify Project Structure:
 
 Save all.py files to the working directory:
 
-`
+```
 
 main.py
 
@@ -92,17 +92,17 @@ achievement.py
 
 history.py
 
-`
+```
 
 3. Run the Application:
 
 Execute the entry point file:
 
-`bash
+```bash
 
 python main.py
 
-``
+```
 
 Instructions for Testing
 
