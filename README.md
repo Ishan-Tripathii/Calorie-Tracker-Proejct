@@ -3,6 +3,9 @@ Fitness and Calorie Tracker Project for VITyarthi:
 
 A modular Python Command Line Interface (CLI) application designed to help users manage their health goals. The application enables tracking of nutritional intake exercise activities, calorie deficits/surpluses, target goals and historical fitness data persistence via CSV formatting.
 
+Made by: Ishan Tripathi 
+Reg. No: 26BCY10146
+
 ## Overview Of The Project
 
 The Fitness And Calorie Tracker provides an easy-to-use command-line environment for everyday health monitoring. By integrating meal intake logging with exercise tracking the system dynamically calculates nutrition, macronutrients and calories burned. Furthermore it measures your real-time performance against targets and saves historic summaries for long-term health tracking.
@@ -11,13 +14,13 @@ This project uses Python libraries and modular structure separating business log
 
 ## Features
 
-* Meal And Nutrition Tracking (diet.py):
+* Meal And Nutrition Tracking (dieting.py):
 
 * Log meals with macro attributes: Calories, Protein (g) Carbs (g) and Fats (g).
 
 * Summarize calorie intake and breakdown of macros for the day.
 
-* Workout Logging (workout.py):
+* Workout Logging (workout_plan.py):
 
 * Track physical exercises by activity type, duration (minutes) and intensity (medium high).
 
@@ -27,13 +30,13 @@ This project uses Python libraries and modular structure separating business log
 
 * Provides an aggregated view displaying total consumed calories, macro distributions and total calories burned.
 
-* Goal And Target Management (goals.py):
+* Goal And Target Management (achievement.py):
 
 * Customize calorie intake targets and target weight goals (in kg).
 
 * Real-time progress check displaying percentage, remaining calories and limit warnings.
 
-* Persistent Historical Logging (history_logger.py):
+* Persistent Historical Logging (history.py):
 
 * Export and append fitness metrics (date, calories_in, calories_out) into a local CSV file (fitness_history.csv).
 
@@ -63,9 +66,9 @@ Make sure you have Python installed on your system (Python 3.6 or higher is reco
 
 ```bash
 
-git clone https://github.com/Suryansh0098/The Fitness And Calorie Tracker.git
+git clone https://github.com/Ishan-Tripathii/Calorie-Tracker-Proejct
 
-cd your-repository-name
+cd Calorie-Tracker-Proejct
 
 ```
 
@@ -77,13 +80,13 @@ Ensure all.py files are in the working directory:
 
 ├── main.py
 
-├── diet.py
+├── dieting.py
 
-├── workout.py
+├── workout_plan.py
 
-├── goals.py
+├── achievement.py
 
-└── history_logger.py
+└── history.py
 
 ```
 
