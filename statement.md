@@ -1,8 +1,8 @@
-Problem Statement
+# Problem Statement
 
 With our busy lifestyles, it can be daunting to keep a healthy lifestyle if you don't keep track of what you eat and how much activity you get each day. It can be a challenge finding an app that is relatively simple, does not require much configuration or the internet. It can be difficult to find a simple and flexible app that allows you to track your calorie intake, track your fitness measurements, set weight loss goals, and save your progress over time without any bells and whistles.
 
-Scope of the Project
+## Scope of the Project
 
 The goal of this project is to create a CLI Fitness and calorie tracker using Python.
 
@@ -26,9 +26,9 @@ Target Users
 
 - CLI fans: Users who dislike software that has a graphical user interface and prefer terminal commands.
 
-High-Level Features
+## High-Level Features
 
-23. Modular design: The 5 modules (diet.py, workout.py, goals.py, history_logger.py, and main.py) will be separated into separate files to make sure each one has a specific role.
+1. Modular design: The 5 modules (diet.py, workout.py, goals.py, history_logger.py, and main.py) will be separated into separate files to make sure each one has a specific role.
 
 2. Full Meal Logging: For each day, the system will log every meal and sum up the number of calories, protein, carbohydrates, and fats.
 
