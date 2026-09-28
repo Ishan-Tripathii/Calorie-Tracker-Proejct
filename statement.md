@@ -1,49 +1,39 @@
-# Project Statement: Fitness & Calorie Tracker CLI
+Problem Statement
 
-## Problem Statement
+With our busy lifestyles, it can be daunting to keep a healthy lifestyle if you don't keep track of what you eat and how much activity you get each day. It can be a challenge finding an app that is relatively simple, does not require much configuration or the internet. It can be difficult to find a simple and flexible app that allows you to track your calorie intake, track your fitness measurements, set weight loss goals, and save your progress over time without any bells and whistles.
 
-In todays paced world keeping a healthy lifestyle means watching what you eat and how you move every day. Many health apps are too complicated. They need a lot of setup or the internet. People find it hard to find a clear and flexible tool that helps them track the calories they eat watch their fitness numbers set goals for their weight and save their past progress without extra stuff.
+Scope of the Project
 
-## Scope of the Project
+The goal of this project is to create a CLI Fitness and calorie tracker using Python.
 
-The goal of this project is to build a Command-Line Interface (CLI) fitness and calorie tracking system using Python.
+- In-Scope:
 
-- **In-Scope**:
+The system will log every meal entered, including all nutritional values (calories, proteins, carbs, fats). It will track each workout entered (type, duration and intensity) and automatically compute the number of calories used. It will give a comprehensive summary of everything logged. 
 
-Record each meal with details about the nutrients it has (calories, protein, carbs and fats).
+Users will be able to set weight and health goals. 
 
-Record workouts by type how long they last and how hard they are. Calculate how many calories are burned automatically.
+The system will track and store local history of fitness summaries via CSV files.
 
-Show a summary with all the details in one place.
+- Out-of-Scope:
 
-Set and watch personal health and weight goals.
+There will not be a graphical user interface (GUI), and a web or mobile application will not be part of the scope. There will not be any integration with fitness gadgets like smart watches. There will not be support for multiple online users nor a use of database.
 
-Save and get past fitness summaries locally using CSV files.
+Target Users
 
-- **Out-of-Scope**:
+- Fitness Novices: The right tool for someone looking for a text-based method to track caloric intake and calories burned over the course of a day.
 
-A graphical user interface (GUI) or a website or mobile app.
+- Students & Developers: Python learners or those who want to participate in small projects. The system is neatly organized script that uses file input/output, dictionaries, and loops, and imports.
 
-Connect with fitness devices like smartwatches.
+- CLI fans: Users who dislike software that has a graphical user interface and prefer terminal commands.
 
-Use a database or support multiple users online.
+High-Level Features
 
-## Target Users
+23. Modular design: The 5 modules (diet.py, workout.py, goals.py, history_logger.py, and main.py) will be separated into separate files to make sure each one has a specific role.
 
-- **Fitness Beginners**: People who want a text-based tool to see how many calories they eat and how much energy they burn during the day.
+2. Full Meal Logging: For each day, the system will log every meal and sum up the number of calories, protein, carbohydrates, and fats.
 
-- **Students & Developers**: Python learners or people who like to work on small projects. They can see an organized script with file I/O dictionaries, loops and modular imports.
+3. Workout Power Calculation: It will compute the calories burned, using your time and intensity of workout (low, medium, high).
 
-- **CLI Enthusiasts**: People who like to use tools in the terminal instead of heavy software with a graphical interface.
+4. Tracking Progress to Your Goals: A comparison of calorie intake versus goals will be shown, and users will be notified if their intake exceeds their predetermined goals.
 
-## High-Level Features
-
-1. **Modular Architecture**: parts of the program into different files (`diet.py` `workout.py` `goals.py` `history_logger.py` and `main.py`) so each part has a clear role.
-
-2. **Comprehensive Dietary Tracking**: Record each meal and add up all the calories, proteins, carbs and fats for the day.
-
-3. **Dynamic Workout Computation**: Automatically calculate how many calories are burned based on how long the workout's how hard it is (`low` `medium` `high`).
-
-4. **Goal Progression Monitoring**: Check how many calories are eaten compared to the goals. Show progress with numbers and warnings if the limit is gone past.
-
-5. **Persistent History Logging**: Save a summary with a time stamp into a CSV file (`fitness_history.csv`) to look back on progress, over time.
+5. History Logs: Summaries will be saved with the date in a CSV file (fitness_history.csv) so users can keep track of progress.
