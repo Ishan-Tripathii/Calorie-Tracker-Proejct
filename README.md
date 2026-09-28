@@ -1,137 +1,140 @@
-# Fitness-and-Calorie-Tracker-Proejct
+# Fitness-and-Calorie-Tracker-Project
+
 Fitness and Calorie Tracker Project for VITyarthi:
 
-A modular Python Command Line Interface (CLI) application designed to help users manage their health goals. The application enables tracking of nutritional intake exercise activities, calorie deficits/surpluses, target goals and historical fitness data persistence via CSV formatting.
+This modular Python Command Line Interface (CLI) program enables users to successfully maintain their health goals. By enabling the user to track nutritional data, exercise, calorie deficits/surpluses, weight loss targets, and the continuity of historical fitness data in CSV format.
 
-Made by: Ishan Tripathi 
-Reg. No: 26BCY10146
+Created by: Ishan Tripathi
 
-## Overview Of The Project
+Registration Number: 26BCY10146
 
-The Fitness And Calorie Tracker provides an easy-to-use command-line environment for everyday health monitoring. By integrating meal intake logging with exercise tracking the system dynamically calculates nutrition, macronutrients and calories burned. Furthermore it measures your real-time performance against targets and saves historic summaries for long-term health tracking.
+Overview of the Project
 
-This project uses Python libraries and modular structure separating business logic for diet tracking, workout logging, target goals and persistent history management into distinct Python modules.
+Fitness and Calorie Tracker is an intuitive command-line tool for everyday health and fitness tracking. It combines meal logging with exercise logs to provide a target-driven nutrition, macro, and calorie computation with real time feedback on current progress, along with storing historical summaries for long-term tracking. We use Python libraries and a modular design, which isolates business logic for diet tracking, workout logging, target goals, and database handling to keep a persistent history into different Python modules.
 
-## Features
+Features
 
-* Meal And Nutrition Tracking (dieting.py):
+* Meal and Nutrition Tracking (dieting.py):
 
-* Log meals with macro attributes: Calories, Protein (g) Carbs (g) and Fats (g).
+* Enables food entry with the macro specific values: Calories, Protein (grams), Carbohydrates (grams) and Fats (grams).
 
-* Summarize calorie intake and breakdown of macros for the day.
+* Provides calorie amount and macro summaries for that day.
 
 * Workout Logging (workout_plan.py):
 
-* Track physical exercises by activity type, duration (minutes) and intensity (medium high).
+* Monitors actual (timed) workout sessions by activity, total time (minutes) and medium or high intensity.
 
-* Automatically calculates burned calories based on intensity multipliers.
+* Automatically calculates how many calories you've burned according to your intensity multipliers.
 
 * Daily Dashboard (main.py):
 
-* Provides an aggregated view displaying total consumed calories, macro distributions and total calories burned.
+* Provides a summarized view of total calories consumed, macro ratios, and total calories burned.
 
-* Goal And Target Management (achievement.py):
+* Goal and Target Management (achievement.py):
 
-* Customize calorie intake targets and target weight goals (in kg).
+* Allows customisability of daily calorie intake target and target weight goals (kg).
 
-* Real-time progress check displaying percentage, remaining calories and limit warnings.
+* Provides sprint checks to display percentage, remaining calories, and limit warnings.
 
 * Persistent Historical Logging (history.py):
 
-* Export and append fitness metrics (date, calories_in, calories_out) into a local CSV file (fitness_history.csv).
+* Exports and appends the following fitness data to a local file (fitness_history.csv): date, calories in, calories out.
 
-*. Inspect stored historical progress directly from the command line.
+* Enables view stored historical progression entirely from command-line interface.
 
-## Technologies / Tools Used
+Technologies / Tools Used
 
 * Programming Language: Python 3.x
 
 * Standard Libraries:
 
-* csv (for data storage and file I/O operations)
+* csv (data storage or for input/output to a file)
 
-* datetime (for fetching system date timestamps
+* datetime (for fetching system date timestamps)
 
-* Version Control And Repository: Git / GitHub
+• Version Control and Repository: Git / GitHub
 
-## Steps To Install And Run The Project
+How to Run the project after clonging Now when you get the whole project in local you have to run the project by executing the script. Steps to run the project: 1. Install the requirements 2. 
 
-### Prerequisites
+Run The script to run the project 3. 
 
-Make sure you have Python installed on your system (Python 3.6 or higher is recommended).
+Data Preparation is done then all the reports.
 
-### Installation. Execution
+# Prerequisites
 
-1. Clone The Repository:
+Please ensure that Python is installed in your environment (Python version 3.6 or above).
 
-```bash
+# Installation and Execution
+
+1. Clone the Repository:
+
+``bash
 
 git clone https://github.com/Ishan-Tripathii/Calorie-Tracker-Proejct
 
 cd Calorie-Tracker-Proejct
 
-```
+`
 
 2. Verify Project Structure:
 
-Ensure all.py files are in the working directory:
+Save all.py files to the working directory:
 
-```
+`
 
-├── main.py
+main.py
 
-├── dieting.py
+dieting.py
 
-├── workout_plan.py
+workout_plan.py
 
-├── achievement.py
+achievement.py
 
-└── history.py
+history.py
 
-```
+`
 
-3. Run The Application:
+3. Run the Application:
 
 Execute the entry point file:
 
-```bash
+`bash
 
 python main.py
 
-```
+``
 
-## Instructions For Testing
+Instructions for Testing
 
-To test and verify all features of the application follow this sequence after launching main.py:
+The following sequence must be used to test and verify all the features of the application once main.py has been run:
 
 1. Option 4: Set Target Goals
 
-* Enter 2000 for goal and 70.0, for weight. Verify success message.
+* Input 2000 as the goal and 70.0 as the weight. Confirm the success message.
 
 2. Option 1: Log a Meal
 
-* Enter food name (Oatmeal) calories (300) protein (10) carbs (50) fats (5).
+* Provide food name Oatmeal and specify number of calories (300), number of protein (10g), the amount of carbs (50 g), and fats (5 g).
 
 3. Option 2: Log a Workout
 
-* Enter exercise (Running) duration (30 minutes) intensity (high). Verify calculated burned calories (360 calories).
+* Put exercise (Running). Time (30 minutes). Put the intensity of exercise (high). Check the number of kcal burnt (360 kcal).
 
 4. Option 3: View Daily Dashboard
 
-* Verify that consumed calories and burned calories correctly reflect your entries.
+*Ensure that the calories entered and the calories burned are correct.
 
 5. Option 5: View Goal Progress
 
-* Check progress percentage. Remaining allowable calories.
+• Review current progress % and remaining allowable calories.
 
-6. Option 6: Save Day To History Log
+6. Option 6: Save Day to History Log
 
-* Save session. Confirm fitness_history.csv is. Updated in your folder directory.
+* Save session. Make sure that fitness_history.csv has been refreshed in your folder location.
 
 7. Option 7: View History Log
 
-* Verify that todays date and stored values display correctly from the CSV file.
-
+* Check the date of today, and the stored values are read properly from the CSV file.
 8. Option 8: Exit
 
 * Confirm program exit.
